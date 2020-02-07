@@ -1,4 +1,4 @@
-package conexaojdbc;
+package br.com.monthalcantara.conexaojdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -16,8 +16,7 @@ public class Conexao {
 
 		try {
 
-			con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/estudojava", "postgres",
-					"admin");
+			con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/estudojava", "postgres", "admin");
 
 			System.out.println("Conectado com sucesso");
 
