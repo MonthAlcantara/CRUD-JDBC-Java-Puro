@@ -1,14 +1,30 @@
-package br.com.monthalcantara.model;
+package model;
 
 public class UserEstudoJava {
 	private String nome;
 	private String email;
 	private Long id;
+	private Telefone telefone;
+	
 
 	@Override
 	public String toString() {
 		return "UserEstudoJava [Nome = " + nome + " | E-mail = " + email + " | Id = " + id + "]";
 	}
+	
+	
+	
+	public Telefone getTelefone() {
+		return telefone;
+	}
+
+
+
+	public void setTelefone(Telefone telefone) {
+		this.telefone = telefone;
+	}
+
+
 
 	public String getNome() {
 		return nome;
