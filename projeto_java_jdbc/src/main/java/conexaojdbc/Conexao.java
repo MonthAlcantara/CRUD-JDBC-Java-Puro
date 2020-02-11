@@ -32,6 +32,7 @@ public class Conexao {
 		}
 		return con;
 	}
+
 	public static void fecharConexao(Connection con) {
 		if (con != null) {
 			try {
@@ -44,6 +45,7 @@ public class Conexao {
 			}
 		}
 	}
+
 	public static void fecharConexao(Connection con, PreparedStatement preparador) {
 		if (preparador != null) {
 			try {

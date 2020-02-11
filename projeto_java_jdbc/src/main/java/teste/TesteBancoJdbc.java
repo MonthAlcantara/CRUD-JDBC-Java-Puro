@@ -31,14 +31,15 @@ public class TesteBancoJdbc {
 		UserEstudoJavaDAO userDAO = new UserEstudoJavaDAO();
 		UserEstudoJava user = new UserEstudoJava();
 		user.setId(12L);
-		
+
 		List<BeanUserFone> lista = new ArrayList<BeanUserFone>();
-		
+
 		lista = userDAO.buscarTodosInner(user);
 		for (BeanUserFone listar : lista) {
 			System.out.println(listar.toString());
 		}
 	}
+
 	@Test
 	public void testInserirUser() {
 		UserEstudoJava user = new UserEstudoJava();
@@ -68,12 +69,14 @@ public class TesteBancoJdbc {
 		userDAO.excluirUser(user);
 		testBuscarBanco();
 	}
+
 	@Test
 	public void testApagarTodos() {
 		UserEstudoJavaDAO userDAO = new UserEstudoJavaDAO();
 		userDAO.apagarTodos();
 		testBuscarBanco();
 	}
+
 	@Test
 	public void testSalvarTel() {
 		Telefone telefone = new Telefone();
@@ -82,6 +85,6 @@ public class TesteBancoJdbc {
 		telefone.setTipo("Celular");
 		telefone.setUsuario(12L);
 		telefoneDAO.salvarTelefone(telefone);
-	
+
 	}
 }
