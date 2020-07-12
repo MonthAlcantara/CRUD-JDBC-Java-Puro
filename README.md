@@ -9,7 +9,7 @@ Hoje em dia os frameworks encapsulam toda essa base do Java puro mas é muito im
 
 ## 🛠️ Construído com
 
-Mencione as ferramentas que você usou para criar seu projeto
+Ferramentas utilizadas para criar seu projeto
 
 * [ECLIPSE](http://www.https://www.eclipse.org/) - IDE utilizada
 * [Maven](https://www.maven.apache.org/) - Gerente de Dependência
